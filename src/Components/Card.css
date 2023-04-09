@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Dosis:wght@300&family=Exo+2:wght@200&family=Fjalla+One&family=Hammersmith+One&family=Montserrat&family=Noto+Sans:wght@200&family=Oswald&family=Poiret+One&family=Raleway:wght@300&family=Roboto+Slab:wght@300&family=Signika+Negative:wght@300&display=swap');
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  width: 200px;
+  height: 300px;
+  border-radius: 1rem;
+}
+.card .profile {
+  border-radius: 100%;
+  transition: 0.2s;
+  height: 140px;
+  width: 140px;
+  margin-top: 30px;
+}
+.card:hover .profile {
+  transform: scale(1.2);
+}
+.front > h4{
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  color: rgb(73, 22, 22);
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .content .back {
+  position: absolute;
+  width: 89%;
+  height: 92%;
+  background-color: #d9d6e8;
+  transition: 1s;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 1rem;
+}
+.from-bottom {
+  top: 100%;
+  left: 0;
+
+}
+
+.card:hover .content .from-bottom {
+  top: 80%;
+ 
+}
+.read-more{
+  padding: 10px 20px;
+  background-color: #18bfbc62;
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
+  color: rgb(28, 9, 2);
+  border: none;
+  border-radius: 5px;
+  border-bottom-right-radius : 1rem;
+  text-decoration: none;
+  border-bottom-left-radius : 1rem;
+}
+
+
