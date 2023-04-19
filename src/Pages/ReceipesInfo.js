@@ -11,10 +11,10 @@ export const ReceipesInfo = () => {
   const [loading, setLoading] = useState(true);
   const [foodData, setFoodData] = useState([]);
   const { foodReceipe } = useParams();
-  const f = foodReceipe;
-  const itemReceipe = async (f) => {
+  const foodName = foodReceipe;
+  const itemReceipe = async (foodName) => {
     try {
-      const data = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${f}&app_id=${app_id}&app_key=${app_key}`)
+      const data = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${foodName}&app_id=${app_id}&app_key=${app_key}`)
       const response = await data.json();
       setLoading(false);
       return response;
@@ -26,10 +26,10 @@ export const ReceipesInfo = () => {
     }
   }
   useEffect(() => {
-    itemReceipe(f).then((resp) => {
+    itemReceipe(foodName).then((resp) => {
       setFoodData(resp.hits[0].recipe);
     })
-  }, [f])
+  }, [foodName])
   return (
     <>
       {
