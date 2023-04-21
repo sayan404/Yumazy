@@ -6,11 +6,8 @@ export const Preloader = () => {
       <div className="loader-container">
         <div className="spinner">
         </div>
-        <div className="spinner3">
-        </div>
         <div className="spinner2">
         </div>
-
       </div>
     </>
   )

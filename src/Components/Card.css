@@ -8,8 +8,13 @@
   width: 200px;
   height: 300px;
   border-radius: 1rem;
-  border: 4px solid brown;
-  box-shadow: 5px 5px 10px gray;
+  border: 5px solid rgba(81, 22, 22, 0.393);  
+  transition: 0.5s;
+}
+.card:hover {
+  transition: 0.5s;
+  border: 5px solid rgba(58, 15, 15, 0.597);  
+  transform: scale(1.1); 
 }
 .card .profile {
   border-radius: 100%;
@@ -17,10 +22,11 @@
   height: 140px;
   width: 140px;
   margin-top: 30px;
-  border: 4px solid rgb(173, 116, 116);
+  transition: 1s;
 }
 .card:hover .profile {
-  transform: scale(1.2);
+  transition: 1s;
+  transform: scale(1.2); 
 }
 .front > h4{
   display: flex;
