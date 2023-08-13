@@ -1,16 +1,15 @@
-.bottom-cntainer{
-    width: 90rem;
-    margin:50px 80px;
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    grid-gap: 3rem;
+.bottom-cntainer {
+    display: flex;
+    padding: 2vh 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.searched-food{
-    width: 1500px;
+.searched-food {
+    width: 100vw;
     height: 50vh;
-    display: flex ;
+    display: flex;
     justify-content: center;
     margin-top: 60px;
 }
-
